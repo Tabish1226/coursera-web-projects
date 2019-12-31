@@ -1,0 +1,138 @@
+/*Stylesheet for Module 2 Solution*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    word-wrap: normal; 
+    color:white;
+    background-color: lightgray;
+}
+.container{
+    width: 100%;
+    margin:auto;
+    padding:auto;
+}
+.main_heading{
+    color:#555;
+    text-align: center;
+}
+.title{
+    color:white;
+}
+p{
+    padding:10px 10px 2px 10px;
+}
+section > article{
+    color:#E6E6FA;
+    background-color: #4B0082;
+    border: 1px solid black;
+}
+.box1{
+    background-color: #ff1a1a;
+}
+.box2{
+    background-color:#99ff33;
+}
+.box3{
+    background-color:#1a8cff;
+}
+/* For Mobile and Small Screen Devices */
+@media screen and (max-width:767px){
+    section{
+        width:100%;
+    }
+    section > article{
+        margin:30px;
+    }
+    .title_outer{
+        position: sticky;
+        left:700px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        width:100px;
+        height:40px;
+    }
+    .title{
+        position: absolute;
+        top:-10px;
+        left:25px;
+    }
+}
+/* For Tablet and Medium Screen Size Devices */
+@media screen and (min-width:768px) and (max-width:991px){
+    section{
+        width:100%;
+    }
+    section > article{
+        margin:10px;
+    }
+    .art-1{
+        width:45%;
+    }
+    .art-2{
+        width: 45%;
+    }.art-1, .art-2{
+        display: inline-block;
+    }
+    .art-3{
+        width:93%;
+    }
+    .title_outer{
+        position: sticky;
+        left:800px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        width:150px;
+        height:40px;
+    }
+    .title{
+        position: absolute;
+        top:-10px;
+        left:50px;
+    }
+}
+/* For Desktop Devices and Other, with Larger Displays */
+@media screen and (min-width:992px){
+    section{
+        width:100%;
+    }
+    section > article{
+        width:30%;
+        margin-left:1.5%;
+        display: inline-block;
+    }
+    .title_outer{
+        position: sticky;
+        left:1500px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        width:200px;
+        height:40px;
+    }
+    .title{
+        position: absolute;
+        top:-10px;
+        left:72px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

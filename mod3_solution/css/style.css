@@ -1,0 +1,27 @@
+body{
+    text-align: justify;
+}
+@media (min-width:768px){
+    .navbar-collapse, .nav-button{
+        visibility: hidden;
+    }
+    nav{
+        height: 56px;
+    }
+}
+nav hr{
+    margin:auto;
+    background-color:white;
+}
+article#chicken{
+    background-color: antiquewhite;
+}
+article#beef{
+    background-color: rgb(250, 229, 183);
+}
+article#sushi{
+    background-color: aliceblue;
+}
+article#beef,article#sushi{
+    margin-top:20px;
+}
